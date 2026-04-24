@@ -1,0 +1,183 @@
+/* tennis.css — from-scratch stylesheet for scratch.html */
+
+/* ---- 1. Global / body ---- */
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  background-color: #1a3a2a;
+  color: #f0ede6;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- 2. Font color utilities ---- */
+h1, h2, h3 {
+  font-family: 'Arial Black', 'Impact', sans-serif;
+  color: #c8f0d8;
+}
+
+a {
+  color: #7ecfa0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* ---- 3. Main layout divs ---- */
+#header-div {
+  background-color: #0f2419;
+  border-bottom: 4px solid #3d9e65;
+  padding: 2rem;
+  text-align: center;
+}
+
+#header-div h1 {
+  font-size: 3.5rem;
+  letter-spacing: 4px;
+  margin: 0;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+#header-div p {
+  color: #a8d4b8;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+#nav-div {
+  background-color: #0f2419;
+  padding: 0.75rem 2rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  border-bottom: 1px solid #2d6a4f;
+}
+
+#nav-div a {
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #7ecfa0;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+#nav-div a:hover {
+  background: #2d6a4f;
+  text-decoration: none;
+}
+
+#main-div {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.5rem 3rem;
+}
+
+/* ---- 4. Section cards ---- */
+.section-card {
+  background-color: #213d2e;
+  border: 1px solid #3d6e52;
+  border-radius: 10px;
+  padding: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.section-card h2 {
+  font-size: 1.6rem;
+  border-bottom: 2px solid #3d9e65;
+  padding-bottom: 0.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* ---- 5. Font family overrides ---- */
+p, li {
+  font-family: 'Georgia', serif;
+  line-height: 1.75;
+  color: #d8e8de;
+}
+
+code, .stat-label {
+  font-family: 'Courier New', monospace;
+  background: #0f2419;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #7ecfa0;
+}
+
+/* ---- 6. Court image banner ---- */
+.court-banner {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 2px solid #3d9e65;
+  display: block;
+}
+
+/* ---- 7. Nested list styles ---- */
+ol.slam-list {
+  padding-left: 1.5rem;
+}
+
+ol.slam-list > li {
+  margin-bottom: 0.75rem;
+  font-weight: bold;
+  color: #c8f0d8;
+}
+
+ul.surface-list {
+  margin-top: 0.4rem;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+ul.surface-list li {
+  font-weight: normal;
+  color: #a8d4b8;
+  margin-bottom: 0.2rem;
+}
+
+/* ---- 8. Video wrapper ---- */
+.video-wrap {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 2px solid #3d9e65;
+  margin-top: 1rem;
+}
+
+.video-wrap iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ---- 9. Tableau embed wrapper ---- */
+.tableau-wrap {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid #3d9e65;
+  margin-top: 1rem;
+  background: white;
+}
+
+/* ---- 10. Footer ---- */
+#footer-div {
+  background: #0f2419;
+  border-top: 3px solid #3d9e65;
+  text-align: center;
+  padding: 1.5rem;
+  color: #7ecfa0;
+  font-family: Arial, sans-serif;
+  font-size: 0.85rem;
+}

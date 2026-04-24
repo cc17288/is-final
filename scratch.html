@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carson's Tennis Hub</title>
+  <link rel="stylesheet" href="tennis.css">
+</head>
+<body>
+
+  <!-- HEADER DIV -->
+  <div id="header-div">
+    <h1>🎾 TENNIS HUB</h1>
+    <p>A passion for the sport — by Carson Clark</p>
+  </div>
+
+  <!-- NAV DIV -->
+  <div id="nav-div">
+    <a href="#about">About</a>
+    <a href="#slams">Grand Slams</a>
+    <a href="#tips">Tips</a>
+    <a href="#video">Watch</a>
+    <a href="#tableau">Stats</a>
+    <a href="index.html">🏠 Home</a>
+    <a href="app.html">🎾 Match Predictor</a>
+  </div>
+
+  <!-- MAIN CONTENT DIV -->
+  <div id="main-div">
+
+    <!-- ON-PAGE ANCHOR TARGET -->
+    <a name="about" id="about"></a>
+
+    <!-- ABOUT SECTION -->
+    <div class="section-card">
+      <h2>About My Tennis Journey</h2>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Federer_and_Nadal_Laver_Cup_2017.jpg/1280px-Federer_and_Nadal_Laver_Cup_2017.jpg"
+        alt="Federer and Nadal at Laver Cup"
+        class="court-banner"
+      />
+      <p>
+        Tennis has been a major part of my life. I spent years as a tennis instructor at
+        Cliff Drysdale Tennis (Red Ledges) in Heber, Utah, coaching players of all ages and
+        skill levels. Teaching the sport taught me patience, strategy, and a deep appreciation
+        for the technical beauty of the game.
+      </p>
+      <p>
+        I've been recognized four times as an Academic All-State tennis player at WHS, and
+        tennis remains one of my greatest passions alongside pickleball. This page is a
+        celebration of everything I love about the sport.
+      </p>
+      <!-- On-page anchor link -->
+      <p><a href="#slams">↓ Jump to Grand Slams breakdown</a></p>
+    </div>
+
+    <!-- GRAND SLAMS — Nested list section -->
+    <a name="slams" id="slams"></a>
+    <div class="section-card">
+      <h2>The Grand Slams</h2>
+      <p>Tennis's four major tournaments, each played on a unique surface:</p>
+
+      <!-- ORDERED LIST with UNORDERED lists embedded inside each item -->
+      <ol class="slam-list">
+        <li>Australian Open (Hard Court)
+          <ul class="surface-list">
+            <li>Held in Melbourne, Australia every January</li>
+            <li>Played on DecoTurf hard courts</li>
+            <li>Known for extreme summer heat</li>
+          </ul>
+        </li>
+        <li>French Open / Roland Garros (Clay)
+          <ul class="surface-list">
+            <li>Held in Paris, France each May–June</li>
+            <li>The only major played on red clay</li>
+            <li>Nadal has won here a record 14 times</li>
+          </ul>
+        </li>
+        <li>Wimbledon (Grass)
+          <ul class="surface-list">
+            <li>The oldest tennis tournament in the world (1877)</li>
+            <li>Played on natural grass courts in London</li>
+            <li>Famous all-white clothing rule</li>
+          </ul>
+        </li>
+        <li>US Open (Hard Court)
+          <ul class="surface-list">
+            <li>Held in Flushing Meadows, New York each August–September</li>
+            <li>Played on Laykold hard courts (blue surface)</li>
+            <li>Known for the loudest, most energetic crowd</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+
+    <!-- TIPS SECTION -->
+    <a name="tips" id="tips"></a>
+    <div class="section-card">
+      <h2>Tips from a Former Instructor</h2>
+      <p>
+        After coaching hundreds of players at Red Ledges, here are the fundamentals I
+        always emphasized:
+      </p>
+      <ul class="surface-list" style="padding-left: 1.5rem; margin-top: 0.5rem;">
+        <li><strong>Footwork first.</strong> 80% of tennis is getting in position — the swing comes last.</li>
+        <li><strong>Watch the ball all the way to contact.</strong> Most mishits are head-turning early.</li>
+        <li><strong>Topspin is your friend.</strong> Heavy topspin gives you margin over the net and keeps balls in.</li>
+        <li><strong>Serve placement &gt; serve speed.</strong> A well-placed 100 mph serve beats a straight 130 mph every time.</li>
+        <li><strong>Stay mentally calm.</strong> One bad game doesn't define a set. Reset and refocus.</li>
+      </ul>
+    </div>
+
+    <!-- VIDEO SECTION -->
+    <a name="video" id="video"></a>
+    <div class="section-card">
+      <h2>Greatest Match Ever Played</h2>
+      <p>
+        The 2008 Wimbledon Final between Federer and Nadal is widely considered the greatest
+        tennis match in history — nearly 5 hours of breathtaking play in fading light.
+      </p>
+      <div class="video-wrap">
+        <!-- Embedded YouTube video -->
+        <iframe
+          src="https://www.youtube.com/embed/mHsg2M25PzY"
+          title="2008 Wimbledon Final - Federer vs Nadal (Full Match)"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <!-- TABLEAU SECTION -->
+    <a name="tableau" id="tableau"></a>
+    <div class="section-card">
+      <h2>ATP Rankings — Live Tableau Viz</h2>
+      <p>
+        The interactive visualization below pulls from public tennis data.
+        Explore rankings, nationalities, and more by hovering and clicking.
+      </p>
+      <div class="tableau-wrap">
+        <!-- Live embedded Tableau public visualization -->
+      <div class='tableauPlaceholder' id='viz1' style='position:relative; width:100%; height:500px;'>
+          <noscript>
+            <a href='#'><img alt='Tennis ATP Ranking' src='https://public.tableau.com/static/images/Te/TennisATPRanking/Visualize/1_rss.png' style='border:none;'></a>
+          </noscript>
+          <object class='tableauViz' style='display:none; width:100%; height:500px;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='TennisATPRanking/Visualize' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+          </object>
+        </div>
+        <script type='text/javascript'>
+          var divElement = document.getElementById('viz1');
+          var vizElement = divElement.getElementsByTagName('object')[0];
+          vizElement.style.width='100%';
+          vizElement.style.height='500px';
+          var scriptElement = document.createElement('script');
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+      </div>
+      <p style="margin-top: 0.75rem; font-size: 0.82rem; color: #7ecfa0;">
+        Note: If the Tableau viz above does not load, try opening this page from GitHub Pages
+        (not locally). You can also find great public tennis visualizations at
+        <a href="https://public.tableau.com" target="_blank">public.tableau.com</a>.
+      </p>
+    </div>
+
+    <!-- MATCH PREDICTOR CALLOUT -->
+    <div class="section-card" style="text-align:center; border-color: #7ecfa0;">
+      <h2 style="margin-bottom: 0.5rem;">Try the AI Match Predictor</h2>
+      <p>
+        Enter any two players, set their stats, and let AI predict who wins.
+      </p>
+      <a href="app.html" style="
+        display: inline-block;
+        margin-top: 1rem;
+        background: #3d9e65;
+        color: white;
+        padding: 0.75rem 2rem;
+        border-radius: 8px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-decoration: none;
+      ">⚡ Launch Predictor →</a>
+    </div>
+
+  </div><!-- end #main-div -->
+
+  <!-- FOOTER DIV -->
+  <div id="footer-div">
+    <p>Carson Clark &nbsp;|&nbsp; BYU &nbsp;|&nbsp;
+      <a href="index.html">Portfolio Home</a> &nbsp;|&nbsp;
+      <a href="app.html">Match Predictor</a>
+    </p>
+  </div>
+
+</body>
+</html>
